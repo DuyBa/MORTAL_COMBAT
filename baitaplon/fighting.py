@@ -10,11 +10,13 @@ class Fighting():
 		self.offset_data_hero1= hero1[2]
 		self.step_data_hero1= hero1[3]
 		self.hero1_address= hero1[4]
+		
 		self.size_data_hero2= hero2[0]
 		self.scale_data_hero2= hero2[1]
 		self.offset_data_hero2= hero2[2]
 		self.step_data_hero2= hero2[3]
 		self.hero2_address= hero2[4]
+		
 		self.take_bg= take_bg
 		self.take_music= take_music
 

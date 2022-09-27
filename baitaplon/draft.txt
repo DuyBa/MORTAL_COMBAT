@@ -28,3 +28,5 @@ sau đó bro gọi phương thức khởi tạo
 Fighting(hero1, hero2, nhạc nền)  4 dữ liệu trong thằng khởi tạo này lấy từ dòng "tương tự....."
 
 sau khi khởi tạo các dữ liệu rồi thì gọi hàm đánh nhau ra cho bắt đầu trò chơi (thằng hàm này thì link với thằng start button)
+
+
