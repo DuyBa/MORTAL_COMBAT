@@ -1,6 +1,7 @@
 import pygame
 from fighter import Fighter
 from pygame import mixer
+#import end
 
 class Fighting():
 
@@ -19,7 +20,7 @@ class Fighting():
 		
 		self.take_bg= take_bg
 		self.take_music= take_music
-
+	game_stop=False
 	def play_immediately(self):
 
 		pygame.init()
@@ -81,7 +82,7 @@ class Fighting():
 		#take music form self: a string
 		# pygame.mixer.music.load("assets/audio/lop13.mp3") old
 		pygame.mixer.music.load(self.take_music)
-		pygame.mixer.music.set_volume(0) #20
+		pygame.mixer.music.set_volume(20) #20
 		pygame.mixer.music.play(-1, 0.0, 5000)
 		sword_fx= pygame.mixer.Sound("assets/muontam/audio/sword.wav")
 		sword_fx.set_volume(0.5)
@@ -204,7 +205,9 @@ class Fighting():
 					#create 2 instance of fighters (chac chan se co 2 thang tren man hinh, nen ta tao 2 tk)
 					fighter_1 = Fighter(1, 200, 340, False, WARRIOR_DATA,warrior_sheet, WARRIOR_ANIMATION_STEPS, sword_fx)
 					fighter_2 = Fighter(2, 700, 340, True, WIZARD_DATA,wizard_sheet, WIZARD_ANIMATION_STEPS, magic_fx)
-
+			if score[0]	==2 or score[1]==2:
+				game_stop=True
+				#end.End(game_stop)
 			#event handler (xu li de thoat game, ko de cho vong lap vo tan)
 			for event in pygame.event.get():
 				if event.type== pygame.QUIT:
