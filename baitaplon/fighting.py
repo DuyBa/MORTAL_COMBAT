@@ -81,7 +81,7 @@ class Fighting():
 		#take music form self: a string
 		# pygame.mixer.music.load("assets/audio/lop13.mp3") old
 		pygame.mixer.music.load(self.take_music)
-		pygame.mixer.music.set_volume(0) #20
+		pygame.mixer.music.set_volume(20) #20
 		pygame.mixer.music.play(-1, 0.0, 5000)
 		sword_fx= pygame.mixer.Sound("assets/muontam/audio/sword.wav")
 		sword_fx.set_volume(0.5)

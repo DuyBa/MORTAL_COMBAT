@@ -1,3 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+CAI NAY XAM LOZ KO LAM THEO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #0: hero cam kiem #1: phu thuy cam gay #2: nu chien binh #3: phu thuy sach phep
 
 all_size_data= [[162, 162], [250, 250], [64, 44], [231, 90]]
